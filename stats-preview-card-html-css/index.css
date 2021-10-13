@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin-left: 0;
+  margin-right: 0;
+  background-color: hsl(233, 47%, 7%);
+  color: white;
+  font-size: 15px;
+  font-family: "Inter";
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 540px;
+
+  justify-content: center;
+  align-content: center;
+  background-color: hsl(244, 38%, 16%);
+
+  margin: 200px;
+  border-radius: 15px;
+}
+.flex {
+  display: flex;
+
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 20px;
+  padding: 30px;
+  text-align: left;
+}
+.ins {
+  color: hsl(277, 64%, 61%);
+}
+.image {
+  background-color: hsl(277, 64%, 61%);
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.image img {
+  opacity: 0.6;
+  object-fit: fill;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.text {
+  background-color: hsl(244, 38%, 16%);
+  align-self: start;
+
+  justify-self: center;
+  text-align: start;
+  border-radius: 15px;
+}
+h1 {
+  padding: 50px;
+  font-weight: 700;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+p {
+  padding: 40px;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+.d1 {
+  font-weight: 700;
+}
+.d2 {
+  font-weight: 400;
+  font-family: "Lexend Deca";
+  color: hsla(0, 0%, 100%, 0.6);
+}
+@media (max-width: 375px) {
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 540px;
+
+    justify-content: center;
+    align-content: center;
+    background-color: hsl(244, 38%, 16%);
+    width: 100%;
+    margin: 100px;
+    border-radius: 15px;
+  }
+  .image img {
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 15px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 30px;
+    text-align: left;
+    align-items: center;
+  }
+  .flex .d1 {
+    margin-top: 30px;
+    width: 100px;
+  }
+  .flex .d1:first-of-type {
+    margin-top: 0px;
+  }
+  .text {
+    grid-row: 2/3;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  .image {
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 15px;
+  }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 100px;
+  }
+}
